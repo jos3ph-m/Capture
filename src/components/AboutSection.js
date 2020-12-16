@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const AboutSection = () => {
   return(
     <About>
-      <div className="description">
+      <Description>
         <div className="title">
           <div className="hide">
             <h2>We work to make</h2>
@@ -20,10 +20,10 @@ const AboutSection = () => {
         </div>
         <p>Contact us for any photography or videography ideas that you have.  We have professionalswith amazing skills.</p>
         <button>Contact Us</button>
-      </div>
-      <div className="image">
+      </Description>
+      <Image>
         <img src={home1} alt="Man with a camera"/>
-      </div>
+      </Image>
     </About>
   )
 }
@@ -37,5 +37,17 @@ const About = styled.div`
   padding: 5rem 10rem;
   color: white;
 `;
+
+const Description = styled.div`
+  flex: 1;
+  padding-right: 5rem;
+  h2{
+    font-weight: lighter;
+  }
+`;
+
+const Image = styled.div`
+  flex: 1;
+`
 
 export default AboutSection;
