@@ -48,6 +48,13 @@ const Description = styled.div`
 
 const Image = styled.div`
   flex: 1;
-`
+  img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+  }
+`;
+
+
 
 export default AboutSection;
