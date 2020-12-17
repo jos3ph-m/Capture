@@ -7,10 +7,14 @@ import money from '../img/money.svg';
 import teamwork from '../img/teamwork.svg';
 import home2 from '../img/home2.png'
 
+//styles
+import styled from "styled-components";
+import { About, Description, Image, Hide } from '../styles'
+
 const ServicesSection = () => {
   return (
-    <div className="services">
-      <div className="description">
+    <Services>
+      <Description>
         <h2>High <span>quality</span> services</h2>
         <div className="cards">
           <div className="card">
@@ -42,12 +46,16 @@ const ServicesSection = () => {
             <p>Lorem ipsum dolor sit amet.</p>
           </div>
         </div>
-      </div>
-      <div className="image">
+      </Description>
+      <Image>
         <img src={home2} alt="home 2"/>
-      </div>
-    </div>
+      </Image>
+    </Services>
   )
 }
+
+const Services = styled(About)`
+
+`
 
 export default ServicesSection;
