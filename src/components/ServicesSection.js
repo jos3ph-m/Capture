@@ -9,14 +9,14 @@ import home2 from '../img/home2.png'
 
 //styles
 import styled from "styled-components";
-import { About, Description, Image, Hide } from '../styles'
+import { About, Description, Image } from '../styles'
 
 const ServicesSection = () => {
   return (
     <Services>
       <Description>
         <h2>High <span>quality</span> services</h2>
-        <div className="cards">
+        <Cards>
           <div className="card">
             <div className="icon">
               <img src={clock} alt="clock"/>
@@ -45,7 +45,7 @@ const ServicesSection = () => {
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
           </div>
-        </div>
+        </Cards>
       </Description>
       <Image>
         <img src={home2} alt="home 2"/>
@@ -55,7 +55,17 @@ const ServicesSection = () => {
 }
 
 const Services = styled(About)`
-
+  h2 {
+    padding-bottom: 5rem;
+  }
+  p{
+    width: 70%;
+    padding: 2rem 0 4rem 0rem;
+  }
+`
+const Cards = styled.div`
+  display: flex;
+  flex-wrap: wrap;
 `
 
 export default ServicesSection;
