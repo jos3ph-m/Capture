@@ -12,6 +12,7 @@ const FaqSection = () => {
           <p>Lorem ipsum dolor sit amet.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, praesentium!</p>
         </div>
+        <div className="faq-line"></div>
       </div>
       <div className="question">
         <h4>What's the daily schedule?</h4>
@@ -19,6 +20,7 @@ const FaqSection = () => {
           <p>Lorem ipsum dolor sit amet.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, praesentium!</p>
         </div>
+        <div className="faq-line"></div>
       </div>
       <div className="question">
         <h4>Do you have different payment methods?</h4>
@@ -26,6 +28,7 @@ const FaqSection = () => {
           <p>Lorem ipsum dolor sit amet.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, praesentium!</p>
         </div>
+        <div className="faq-line"></div>
       </div>
       <div className="question">
         <h4>What products do you offer?</h4>
@@ -33,6 +36,7 @@ const FaqSection = () => {
           <p>Lorem ipsum dolor sit amet.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, praesentium!</p>
         </div>
+        <div className="faq-line"></div>
       </div>
     </Faq>
   )
