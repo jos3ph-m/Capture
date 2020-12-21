@@ -24,7 +24,7 @@ button{
   transition: all 0.5s ease;
   font-family: 'Inter', san-serif;
   &:hover{
-    background-color: #23d997;
+    background-color: #23d998;
     color: white;
   }
   
