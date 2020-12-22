@@ -14,7 +14,7 @@ function App() {
       <GlobalStyle />
       <Nav />
       <Switch>
-        <Route path="/">
+        <Route path="/" exact>
           <AboutUs />
         </Route>
         <Route path="/work">
