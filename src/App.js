@@ -6,7 +6,7 @@ import ContactUs from './pages/ContactUs';
 import OurWork from './pages/OurWork';
 import Nav from './components/Nav';
 // Router
-import {Switch, Route} from 'react';
+import {Switch, Route} from 'react-router-dom';
 
 function App() {
   return (
