@@ -2,6 +2,8 @@
 import GlobalStyle from './components/GlobalStyle';
 //import pages
 import AboutUs from './pages/AboutUs';
+import ContactUs from './pages/ContactUs';
+import OurWork from './pages/OurWork';
 import Nav from './components/Nav';
 
 function App() {
@@ -9,7 +11,9 @@ function App() {
     <div className="App">
       <GlobalStyle />
       <Nav />
-      <AboutUs />      
+      <AboutUs />  
+      <OurWork />  
+      <ContactUs />  
     </div>
   );
 }
