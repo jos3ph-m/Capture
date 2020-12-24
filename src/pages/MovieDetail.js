@@ -16,10 +16,25 @@ const MovieDetail = () => {
   }, [movies, url]);
 
   return(
-    <div>
-      <h1>MovieDetail</h1>
-    </div>
+    <>
+    {movie && (
+    <Details>
+      <HeadLine>
+        <h2>{movie.title}</h2>
+        <img src={movie.mainImg} alt="movie"/>
+      </HeadLine>
+    </Details>
+    )}
+    </>
   );
 }
+
+const Details = styled.div`
+
+`
+
+const HeadLine = styled.div`
+
+`
 
 export default MovieDetail;
