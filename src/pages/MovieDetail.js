@@ -30,7 +30,7 @@ const MovieDetail = () => {
 }
 
 const Details = styled.div`
-
+  width: 100%;
 `
 
 const HeadLine = styled.div`
