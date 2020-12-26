@@ -9,10 +9,10 @@ const MovieDetail = () => {
   const [movies, setMovies] = useState(MovieState);
   const [movie, setMovie] = useState(null);
 
-  // useEffect
+  // useEffect - when we use filter on an array we are left with an array
   useEffect(() => {
     const currentMovie = movies.filter((stateMovie) => stateMovie.url === url)
-    setMovie(currentMovie);
+    setMovie(currentMovie[0]);
   }, [movies, url]);
 
   return(
