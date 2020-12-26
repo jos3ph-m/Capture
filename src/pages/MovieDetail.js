@@ -25,7 +25,7 @@ const MovieDetail = () => {
       </HeadLine>
       <Awards>
         {movie.awards.map((award) => (
-          <Award/>
+          <Award title={award.title} description={award.description} key={award.title}/>
         ))}
       </Awards>
     </Details>
@@ -57,5 +57,16 @@ const HeadLine = styled.div`
 
 const Awards = styled.div`
 `
+
+// Award Component
+const Award = () => {
+  return (
+    <div>
+      <h3>Title</h3>
+      <div className="line"></div>
+      <p>Description</p>
+    </div>
+  )
+}
 
 export default MovieDetail;
