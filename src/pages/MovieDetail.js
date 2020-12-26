@@ -23,6 +23,11 @@ const MovieDetail = () => {
         <h2>{movie.title}</h2>
         <img src={movie.mainImg} alt="movie"/>
       </HeadLine>
+      <Awards>
+        {movie.awards.map((award) => (
+          <Award/>
+        ))}
+      </Awards>
     </Details>
     )}
     </>
@@ -30,11 +35,27 @@ const MovieDetail = () => {
 }
 
 const Details = styled.div`
-  width: 100%;
+  color: white;
 `
 
 const HeadLine = styled.div`
+  min-height: 90vh;
+  padding-top: 20vh;
+  position: relative;
+  h2{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+  }
+  img{
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
+`
 
+const Awards = styled.div`
 `
 
 export default MovieDetail;
