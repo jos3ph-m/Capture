@@ -56,6 +56,15 @@ const HeadLine = styled.div`
 `
 
 const Awards = styled.div`
+  min-height: 80vh;
+  display: flex;
+  margin: 5rem 10rem;
+  align-items: center;
+  justify-content: space-around;
+`
+
+const AwardStyle = styled.div`
+  
 `
 
 // Award Component
