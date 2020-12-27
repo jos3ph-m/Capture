@@ -59,7 +59,7 @@ const Awards = styled.div`
 `
 
 // Award Component
-const Award = () => {
+const Award = ({title,description}) => {
   return (
     <div>
       <h3>Title</h3>
