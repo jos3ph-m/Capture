@@ -15,7 +15,7 @@ export const MovieState = () => {
       url: "/work/the-athlete",
       awards: [
         {
-          title: "Truly A masterpiece",
+          title: "Truly a masterpiece",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
@@ -38,7 +38,7 @@ export const MovieState = () => {
       secondaryImg: goodtimes2,
       awards: [
         {
-          title: "Truly A masterpiece",
+          title: "Truly a masterpiece",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
@@ -61,7 +61,7 @@ export const MovieState = () => {
       secondaryImg: theracer2,
       awards: [
         {
-          title: "Truly A masterpiece",
+          title: "Truly a masterpiece",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },

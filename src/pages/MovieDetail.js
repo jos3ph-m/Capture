@@ -62,9 +62,9 @@ const Awards = styled.div`
 const Award = ({title,description}) => {
   return (
     <div>
-      <h3>Title</h3>
+      <h3>{title}</h3>
       <div className="line"></div>
-      <p>Description</p>
+      <p>{description}</p>
     </div>
   )
 }
