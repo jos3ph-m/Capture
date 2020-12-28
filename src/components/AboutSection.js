@@ -11,7 +11,7 @@ const AboutSection = () => {
       <Description>
         <div className="title">
           <Hide>
-            <h2>We work to make</h2>
+            <motion.h2 animate={{ opacity: 1, transition: { duration: 2 } }} initial={{ opacity: 0 }}>We work to make</motion.h2>
           </Hide>
           <Hide>
             <h2>your <span>dreams</span></h2>
