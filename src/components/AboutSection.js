@@ -12,10 +12,15 @@ const AboutSection = () => {
     show: { opacity: 1, transition: { duration: 2 } },
   }
 
+  const container = {
+    hidden: { x: 100 },
+    show: { x: 0 }
+  }
+
   return(
     <About>
       <Description>
-        <div className="title">
+        <motion.div variants={container} initial="hidden" animate="show" className="title">
           <Hide>
             <motion.h2 variants={titleAnim} initial="hidden" animate="show">We work to make</motion.h2>
           </Hide>
@@ -25,7 +30,7 @@ const AboutSection = () => {
           <Hide>
             <h2>come true.</h2>
           </Hide>
-        </div>
+        </motion.div>
         <p>Contact us for any photography or videography ideas that you have.  We have professionalswith amazing skills.</p>
         <button>Contact Us</button>
       </Description>
