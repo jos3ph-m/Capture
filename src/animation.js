@@ -1,4 +1,4 @@
-const pageAnimation = {
+export const pageAnimation = {
   hidden: {
     opacity: 0,
     y: 300
