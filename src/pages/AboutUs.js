@@ -9,11 +9,11 @@ import { pageAnimation } from '../animation';
 
 const AboutUs = () => {
   return(
-  <>
+  <motion.div variants={pageAnimation} initial="hidden" animate="show">
     <AboutSection />
     <ServicesSection />
     <FaqSection />
-  </>
+  </motion.div>
   );
 }
 
