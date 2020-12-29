@@ -8,6 +8,8 @@ import Nav from './components/Nav';
 import MovieDetail from './pages/MovieDetail';
 // Router
 import {Switch, Route} from 'react-router-dom';
+//Animation
+import { AnimatePresence } from 'framer-motion';
 
 function App() {
   return (
