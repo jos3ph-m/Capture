@@ -14,10 +14,12 @@ import { pageAnimation, fade, photoAnim, lineAnim, slider, sliderContainer } fro
 const OurWork = () => {
   return(
     <Work exit="exit" variants={pageAnimation} initial="hidden" animate="show" style={{ background: '#fff' }}>
-      <Frame1 variants={slider}></Frame1>
-      <Frame2 variants={slider}></Frame2>
-      <Frame3 variants={slider}></Frame3>
-      <Frame4 variants={slider}></Frame4>
+      <motion.div variants={sliderContainer}>
+        <Frame1 variants={slider}></Frame1>
+        <Frame2 variants={slider}></Frame2>
+        <Frame3 variants={slider}></Frame3>
+        <Frame4 variants={slider}></Frame4>
+      </motion.div>
       <Movie>
         <motion.h2 variants={fade}>The Athlete</motion.h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
