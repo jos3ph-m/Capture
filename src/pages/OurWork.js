@@ -14,6 +14,7 @@ import { pageAnimation, fade, photoAnim, lineAnim } from '../animation';
 const OurWork = () => {
   return(
     <Work exit="exit" variants={pageAnimation} initial="hidden" animate="show" style={{ background: '#fff' }}>
+      <Frame1></Frame1>
       <Movie>
         <motion.h2 variants={fade}>The Athlete</motion.h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
@@ -65,6 +66,17 @@ const Movie = styled.div`
 
 const Hide = styled.div`
   overflow: hidden;
+`
+
+// Frame Animation
+const Frame1 = styled(motion.div)`
+  position: fixed;
+  left: 0;
+  top: 10%;
+  width: 100%;
+  height: 100vh;
+  background: #fffebf;
+  z-index: 2;
 `
 
 export default OurWork;
