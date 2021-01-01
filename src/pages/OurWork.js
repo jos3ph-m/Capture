@@ -15,6 +15,9 @@ const OurWork = () => {
   return(
     <Work exit="exit" variants={pageAnimation} initial="hidden" animate="show" style={{ background: '#fff' }}>
       <Frame1></Frame1>
+      <Frame2></Frame2>
+      <Frame3></Frame3>
+      <Frame4></Frame4>
       <Movie>
         <motion.h2 variants={fade}>The Athlete</motion.h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
@@ -78,5 +81,17 @@ const Frame1 = styled(motion.div)`
   background: #fffebf;
   z-index: 2;
 `
+
+const Frame2 = styled(Frame1)`
+  background: #8ed2ff;
+` 
+
+const Frame3 = styled(Frame1)`
+  background: #8ed2ff;
+` 
+
+const Frame4 = styled(Frame1)`
+  background: #8effa0;
+` 
 
 export default OurWork;
