@@ -15,10 +15,10 @@ const OurWork = () => {
   return(
     <Work exit="exit" variants={pageAnimation} initial="hidden" animate="show" style={{ background: '#fff' }}>
       <Movie>
-        <h2>The Athlete</h2>
-        <div className="line"></div>
+        <motion.h2 variants={fade}>The Athlete</motion.h2>
+        <motion.div className="line"></motion.div>
         <Link to="/work/the-athlete">
-          <img src={athlete} alt="athlete"/>
+          <motion.img variants={photoAnim} src={athlete} alt="athlete"/>
         </Link>
       </Movie>
       <Movie>
