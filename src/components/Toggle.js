@@ -1,8 +1,11 @@
 import React, {useState} from 'react';
 
-const Toggle = () => {
+const Toggle = ({children}) => {
+  const [toggle, setToggle] = useState(true);
   return(
-    <div></div>
+    <div onClick={() => setToggle(!toggle)}>
+      {toggle ? children: ""}
+    </div>
   )
 }
 
