@@ -2,18 +2,29 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 //Images
-import athlete from '../img/athlete-small.png'
-import theracer from '../img/theracer-small.png'
-import goodtimes from '../img/goodtimes-small.png'
+import athlete from '../img/athlete-small.png';
+import theracer from '../img/theracer-small.png';
+import goodtimes from '../img/goodtimes-small.png';
 //Animations
 import { motion } from 'framer-motion';
-import { pageAnimation, fade, photoAnim, lineAnim, slider, sliderContainer } from '../animation';
-
-
+import {
+  pageAnimation,
+  fade,
+  photoAnim,
+  lineAnim,
+  slider,
+  sliderContainer,
+} from '../animation';
 
 const OurWork = () => {
-  return(
-    <Work exit="exit" variants={pageAnimation} initial="hidden" animate="show" style={{ background: '#fff' }}>
+  return (
+    <Work
+      exit="exit"
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      style={{ background: '#fff' }}
+    >
       <motion.div variants={sliderContainer}>
         <Frame1 variants={slider}></Frame1>
         <Frame2 variants={slider}></Frame2>
@@ -25,7 +36,7 @@ const OurWork = () => {
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/the-athlete">
           <Hide>
-            <motion.img variants={photoAnim} src={athlete} alt="athlete"/>
+            <motion.img variants={photoAnim} src={athlete} alt="athlete" />
           </Hide>
         </Link>
       </Movie>
@@ -33,18 +44,18 @@ const OurWork = () => {
         <h2>The Racer</h2>
         <div className="line"></div>
         <Link to="/work/the-racer">
-          <img src={theracer} alt="the racer"/>
+          <img src={theracer} alt="the racer" />
         </Link>
       </Movie>
       <Movie>
         <h2>Good Times</h2>
         <div className="line"></div>
         <Link to="/work/good-times">
-          <img src={goodtimes} alt="good times"/>
+          <img src={goodtimes} alt="good times" />
         </Link>
       </Movie>
     </Work>
-  )
+  );
 };
 
 const Work = styled(motion.div)`
@@ -54,24 +65,24 @@ const Work = styled(motion.div)`
   h2 {
     padding: 1rem 0rem;
   }
-`
+`;
 const Movie = styled.div`
   padding-bottom: 5rem;
-  .line{
+  .line {
     height: 0.5rem;
     background: #23d997;
     margin-bottom: 3rem;
   }
-  img{
+  img {
     width: 100%;
     height: 70vh;
     object-fit: cover;
   }
-`
+`;
 
 const Hide = styled.div`
   overflow: hidden;
-`
+`;
 
 // Frame Animation
 const Frame1 = styled(motion.div)`
@@ -82,18 +93,18 @@ const Frame1 = styled(motion.div)`
   height: 100vh;
   background: #fffebf;
   z-index: 2;
-`
+`;
 
 const Frame2 = styled(Frame1)`
   background: #8ed2ff;
-` 
+`;
 
 const Frame3 = styled(Frame1)`
   background: #8ed2ff;
-` 
+`;
 
 const Frame4 = styled(Frame1)`
   background: #8effa0;
-` 
+`;
 
 export default OurWork;

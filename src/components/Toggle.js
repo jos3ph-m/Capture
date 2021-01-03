@@ -1,12 +1,16 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { titleAnim } from '../animation';
 
-const Toggle = ({children}) => {
-  const [toggle, setToggle] = useState(true);
-  return(
+const Toggle = ({ children, title }) => {
+  const [toggle, setToggle] = useState(false);
+  return (
     <div onClick={() => setToggle(!toggle)}>
-      {toggle ? children: ""}
+      <motion.h4>{title}</motion.h4>
+      {toggle ? children : ''}
+      <div className="faq-line"></div>
     </div>
-  )
-}
+  );
+};
 
 export default Toggle;
