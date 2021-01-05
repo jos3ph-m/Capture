@@ -19,7 +19,15 @@ const ContactUs = () => {
         </Hide>
       </Title>
       <div>
-        <Social>
+        <Social variants={titleAnim}>
+          <Circle />
+          <h2>Send us a message.</h2>
+        </Social>
+        <Social variants={titleAnim}>
+          <Circle />
+          <h2>Send us a message.</h2>
+        </Social>
+        <Social variants={titleAnim}>
           <Circle />
           <h2>Send us a message.</h2>
         </Social>
