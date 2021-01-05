@@ -84,6 +84,14 @@ export const scrollReveal = {
 };
 
 export const swoopAdoop = {
-  hidden: { skew: '45deg' },
-  show: { skew: '0deg', transition: { ease: 'easeOut', duration: 1 } },
+  hidden: {
+    width: '0%',
+    opacity: 0,
+    transition: { ease: 'easeOut', duration: 1 },
+  },
+  show: {
+    width: '100%',
+    opacity: 1,
+    transition: { ease: 'easeOut', duration: 1 },
+  },
 };

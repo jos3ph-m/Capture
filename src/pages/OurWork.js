@@ -44,7 +44,12 @@ const OurWork = () => {
           </Hide>
         </Link>
       </Movie>
-      <Movie ref={element} variants={fade} animate={controls} initial="hidden">
+      <Movie
+        ref={element}
+        variants={swoopAdoop}
+        animate={controls}
+        initial="hidden"
+      >
         <h2>The Racer</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/the-racer">
