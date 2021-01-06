@@ -1,4 +1,4 @@
-import {createGlobalStyle} from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 
@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
 body{
   background: #1b1b1b;
   font-family: 'Inter', san-serif;
+  overflow-x: hidden;
 }
 
 button{
@@ -60,6 +61,6 @@ p{
     line-height: 150%;
 }
 
-`
+`;
 
 export default GlobalStyle;
