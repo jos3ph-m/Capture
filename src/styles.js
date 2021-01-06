@@ -24,6 +24,9 @@ export const Description = styled.div`
   }
   @media (max-width: 1300px) {
     padding: 0;
+    button {
+      margin: 2rem 0rem 5rem 0rem;
+    }
   }
 `;
 
