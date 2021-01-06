@@ -19,18 +19,24 @@ const ContactUs = () => {
         </Hide>
       </Title>
       <div>
-        <Social variants={titleAnim}>
-          <Circle />
-          <h2>Send us a message.</h2>
-        </Social>
-        <Social variants={titleAnim}>
-          <Circle />
-          <h2>Send us a message.</h2>
-        </Social>
-        <Social variants={titleAnim}>
-          <Circle />
-          <h2>Send us a message.</h2>
-        </Social>
+        <Hide>
+          <Social variants={titleAnim}>
+            <Circle />
+            <h2>Through email</h2>
+          </Social>
+        </Hide>
+        <Hide>
+          <Social variants={titleAnim}>
+            <Circle />
+            <h2>On zoom</h2>
+          </Social>
+        </Hide>
+        <Hide>
+          <Social variants={titleAnim}>
+            <Circle />
+            <h2>Or in person</h2>
+          </Social>
+        </Hide>
       </div>
     </ContactStyle>
   );
@@ -53,8 +59,8 @@ const Hide = styled.div`
 
 const Circle = styled.div`
   border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   background: #353535;
 `;
 
