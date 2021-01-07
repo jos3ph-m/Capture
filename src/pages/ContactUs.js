@@ -66,8 +66,8 @@ const Hide = styled.div`
 
 const Circle = styled.div`
   border-radius: 50%;
-  width: 2rem;
-  height: 2rem;
+  width: 1rem;
+  height: 1rem;
   background: #353535;
 `;
 
